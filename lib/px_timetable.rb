@@ -14,6 +14,10 @@ class PxTimetable
     @px = Polyrex.new
     @px.import filename_txt
   end
+  
+  def days()
+    @px.records
+  end
 
   def next(t=Time.now)
 
@@ -64,5 +68,3 @@ class PxTimetable
 
   
 end
-
-
